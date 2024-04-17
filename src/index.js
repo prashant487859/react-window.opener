@@ -51,7 +51,7 @@ const WindowOpener = (props) => {
     }
 
     popup = browser.open(url, name, opts)
-    props.onOpenWindow()
+    props.onOpenWindow(popup)
 
     if (timer === null) {
       timer = setInterval(watcher, 500)
